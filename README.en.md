@@ -7,7 +7,9 @@
 
 ## Introduction
 This project demonstrates how to build an intelligent customer service chatbot using the FAQ from Taoyuan Airport. The data can be replaced and modified as needed.
-![Demo](https://explainthis.s3-ap-northeast-1.amazonaws.com/b335fcf999ff44eeab50d07319725edf.gif)
+
+![Demo](https://github.com/TheExplainthis/ChatGPT-Customer-Service/blob/main/demo/demo.gif)
+
 
 ## Installation
 ### Obtaining Tokens

@@ -7,17 +7,19 @@
 
 ## 介紹
 這個專案會示範利用桃園機場的 FAQ 來做智能客服機器人，而資料都是可以替換的，歡迎自行修改。
-![Demo](https://explainthis.s3-ap-northeast-1.amazonaws.com/b335fcf999ff44eeab50d07319725edf.gif)
+
+![Demo](https://github.com/TheExplainthis/ChatGPT-Customer-Service/blob/main/demo/demo.gif)
+
 
 ## 安裝步驟
 ### Token 取得
-1. 取得 OpenAI 給的 API Token：
+1. 取得 OpenAI 給的 API Key：
     1. [OpenAI](https://beta.openai.com/) 平台中註冊/登入帳號
     2. 右上方有一個頭像，點入後選擇 `View API keys`
-    3. 點選中間的 `Create new secret key` -> 生成後即為 `OPENAI_API` （稍晚會用到）
+    3. 點選中間的 `Create new secret key` -> 生成後即為 `OPENAI_API_KEY` （稍晚會用到）
     - 注意：每隻 API 有免費額度，也有其限制，詳情請看 [OpenAI Pricing](https://openai.com/api/pricing/)
-2. 取得 Line Token：
-    1. 登入 [Line Developer](https://developers.line.biz/zh-hant/)
+2. 取得 LINE Token：
+    1. 登入 [LINE Developer](https://developers.line.biz/zh-hant/)
     2. 創建機器人：
         1. 創建 `Provider` -> 按下 `Create`
         2. 創建 `Channel` -> 選擇 `Create a Messaging API channel`
@@ -28,7 +30,7 @@
 ### 專案設置
 1. Fork Github 專案：
     1. 註冊/登入 [GitHub](https://github.com/)
-    2. 進入 [ChatGPT-Line-Bot](https://github.com/TheExplainthis/ChatGPT-Line-Bot)
+    2. 進入 [ChatGPT-Customer-Service](https://github.com/TheExplainthis/ChatGPT-Customer-Service)
     3. 點選 `Star` 支持開發者
     4. 點選 `Fork` 複製全部的程式碼到自己的倉庫
 2. 部署（免費空間）：
@@ -59,7 +61,7 @@
 3. CronJob 定時發送請求
     1. 註冊/登入 [cron-job.org](https://cron-job.org/en/)
     2. 進入後面板右上方選擇 `CREATE CRONJOB`
-    3. `Title` 輸入 `ChatGPT-Line-Bot`，網址輸入上一步驟的網址，例如：`https://ChatGPT-Customer-Service-HyperDB.explainthis.repl.co/`
+    3. `Title` 輸入 `ChatGPT-Customer-Service-HyperDB`，網址輸入上一步驟的網址，例如：`https://ChatGPT-Customer-Service-HyperDB.explainthis.repl.co/`
     4. 下方則每 `5 分鐘` 打一次
     5. 按下 `CREATE`
 

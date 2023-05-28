@@ -44,7 +44,6 @@ def handle_message(event):
         query = event.message.text.strip()
         query_vector = np.array(model.embedding(query))
         documents = db.query(query_vector, top_k=5)
-        print(documents)
         messages = [{
             'role': 'system',
             'content': '你現在是個資深客服人員，能夠透過使用者的問題，回去文本中尋找答案'
