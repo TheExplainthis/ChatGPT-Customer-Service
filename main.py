@@ -9,7 +9,7 @@ import pandas as pd
 
 from src.models import OpenAIModel
 from src.database import CustomizeHyperDB
-from src.utils import data_preprocessing, construct_sections
+from src.utils import data_preprocessing
 
 import os
 load_dotenv()
